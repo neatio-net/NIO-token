@@ -1,2 +1,2 @@
-# Wrapped $NEAT
-### Tokenized version of the native $NEAT coin on the BSC network.
+# Wrapped NIO
+### Tokenized version of the native NIO coin on the BSC network.
