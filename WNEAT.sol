@@ -1,3 +1,12 @@
+/**
+ *Submitted for verification at Etherscan.io on 2023-06-12
+*/
+
+//  SPDX-License-Identifier: MIT
+//  OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
+//  File: @openzeppelin/contracts@4.9.1/utils/Context.sol
+//  Neatio Project Email: contact@neatio.net
+
 pragma solidity ^0.8.0;
 
 /**
@@ -19,6 +28,11 @@ abstract contract Context {
         return msg.data;
     }
 }
+
+// File: @openzeppelin/contracts@4.9.1/token/ERC20/IERC20.sol
+
+
+// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)
 
 pragma solidity ^0.8.0;
 
@@ -96,6 +110,11 @@ interface IERC20 {
     function transferFrom(address from, address to, uint256 amount) external returns (bool);
 }
 
+// File: @openzeppelin/contracts@4.9.1/token/ERC20/extensions/IERC20Metadata.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)
+
 pragma solidity ^0.8.0;
 
 
@@ -120,6 +139,11 @@ interface IERC20Metadata is IERC20 {
      */
     function decimals() external view returns (uint8);
 }
+
+// File: @openzeppelin/contracts@4.9.1/token/ERC20/ERC20.sol
+
+
+// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/ERC20.sol)
 
 pragma solidity ^0.8.0;
 
@@ -483,12 +507,14 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     function _afterTokenTransfer(address from, address to, uint256 amount) internal virtual {}
 }
 
+// File: contract-51f375e231.sol
+
 
 pragma solidity ^0.8.9;
 
 
 contract Neatio is ERC20 {
-    constructor() ERC20("Neatio", "NEAT") {
+    constructor() ERC20("Neatio", "NIO") {
         _mint(msg.sender, 50000000 * 10 ** decimals());
     }
 }
